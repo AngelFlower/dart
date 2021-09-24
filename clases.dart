@@ -88,10 +88,20 @@ class Animal {
   }
 }
 
+class Perro extends Animal {
+  Perro({required String nombre, required String sexo}) {
+    this.nombre = nombre;
+    this.sexo = sexo;
+  }
+}
+
 void main(List<String> args) {
   //Animal hormiga = Animal('Antz', 'insecto', 'insectos', 'femenino', 'marrón',
   //    'dura', 'jardín', 'mini', 'oviparo', 1, .01, 1, 7, 0);
 
-  Animal hormiga = Animal(nombre: 'Antz');
-  print(hormiga.toString());
+  //Animal hormiga = Animal(nombre: 'Antz');
+  //print(hormiga.toString());
+
+  Perro firu = Perro(nombre: 'Firu', sexo: 'macho');
+  print(firu);
 }
